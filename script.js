@@ -55,16 +55,15 @@ Il programma stampa la somma di tutti i numeri inseriti.
 
 
 // Senza array:
-let sum = 0;
+// let sum = 0;
 
-for (i = 1; i < 11; i++) {
-    let userNum = parseInt(prompt(`Inserisci un numero (${i}):`));
+// for (i = 1; i < 11; i++) {
+//     let userNum = parseInt(prompt(`Inserisci un numero (${i}):`));
 
-    sum += userNum;
-}
+//     sum += userNum;
+// }
 
-alert(sum);
-
+// alert(sum);
 
 
 /*
@@ -73,6 +72,40 @@ In un array sono contenuti i nomi degli invitati alla festa del grande
 Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
 no alla festa.
 */
+
+/*
+- chiedi all'utente un nome
+- memorizza questo nome in una variabile
+
+- controlla se il nome è presente nella lista:
+    - prendi la lista
+    - scorri nome per nome
+    - controlla se il nome a cui sei arrivato è uguale al nome inserito dall'utente
+        - se è presente segnatelo in una variabile "presente"
+
+    - se la variabile presente è stata dichiarata vera 
+        - scrivo in console log "benvenuto"
+*/    
+
+const arrInvited = ["Nick Carraway", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson", "Meyer Wolfsheim", "Catherine", "Owl Eyes", "Dan Cody" ];
+
+let userName = prompt(`Dimmi il tuo nome:`)
+
+let present = false;
+
+for (let i = 0; i < arrInvited.length; i++) {
+
+    if (arrInvited[i] === userName) {
+        present = true;
+    }
+}
+
+if (present) {
+    alert("Benvenuto");
+} else {
+    alert("Il tuo nome non è nella lista")
+}
+
 
 
 /*
