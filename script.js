@@ -43,14 +43,26 @@ Il programma stampa la somma di tutti i numeri inseriti.
 (provatelo anche senza array)
 */
 
-let arrNum = []
+// let arrNum = []
+
+// for (i = 1; i < 11; i++) {
+//     let userNum = parseInt(prompt(`Inserisci un numero (${i}):`));
+//     arrNum.push(userNum);
+// }
+
+// const sum = arrNum.reduce((partialSum, a) => partialSum + a, 0);
+// alert(sum);
+
+
+// Senza array:
+let sum = 0;
 
 for (i = 1; i < 11; i++) {
     let userNum = parseInt(prompt(`Inserisci un numero (${i}):`));
-    arrNum.push(userNum);
+
+    sum += userNum;
 }
 
-const sum = arrNum.reduce((partialSum, a) => partialSum + a, 0);
 alert(sum);
 
 
