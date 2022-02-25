@@ -49,12 +49,10 @@ for (i = 1; i < 11; i++) {
     let userNum = parseInt(prompt(`Inserisci un numero (${i}):`));
     arrNum.push(userNum);
 }
-console.log(arrNum);
 
-// for (let i = 0; i < arrNum.length; i++) {
-//     let somma = userNum;
-//     alert(somma);
-// }
+const sum = arrNum.reduce((partialSum, a) => partialSum + a, 0);
+alert(sum);
+
 
 
 /*
