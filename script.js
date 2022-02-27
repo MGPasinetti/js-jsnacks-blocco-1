@@ -87,25 +87,24 @@ no alla festa.
         - scrivo in console log "benvenuto"
 */    
 
-const arrInvited = ["Nick Carraway", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson", "Meyer Wolfsheim", "Catherine", "Owl Eyes", "Dan Cody" ];
+// const arrInvited = ["Name", "Name1", "Name2", "Name3", "Name4", "Name5", "Name6", "Name7", "Name8", "Name9"];
 
-let userName = prompt(`Dimmi il tuo nome:`)
+// let userName = prompt(`Dimmi il tuo nome:`);
 
-let present = false;
+// let present = false;
 
-for (let i = 0; i < arrInvited.length; i++) {
+// for (let i = 0; i < arrInvited.length; i++) {
 
-    if (arrInvited[i] === userName) {
-        present = true;
-    }
-}
+//     if (arrInvited[i].toLocaleLowerCase === userName.toLowerCase) {
+//         present = true;
+//     }
+// }
 
-if (present) {
-    alert("Benvenuto");
-} else {
-    alert("Il tuo nome non è nella lista")
-}
-
+// if (present) {                  //FIXME: bug in alerts
+//     alert("Benvenuto");
+// } else {
+//     alert("Il tuo nome non è nella lista");
+// }
 
 
 /*
@@ -115,6 +114,25 @@ Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.
 */
 
+/*
+- crea un array vuoto
+- crea un ciclo che chieda all'utente per 6 volte un numero
+    - se il numero è dispari inseriscilo nell'array
+*/
+
+const arrOddNums = [];
+
+for (let index = 0; index < 6; index++) {
+
+    let userNum = parseInt(prompt(`Dammi un numero:`))
+
+    if (userNum % 2 === 1)  {
+        arrOddNums.push(userNum); 
+    }
+    
+}
+
+alert(arrOddNums);
 
 /*
 Snack 1.6
