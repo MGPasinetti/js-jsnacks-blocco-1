@@ -87,24 +87,24 @@ no alla festa.
         - scrivo in console log "benvenuto"
 */    
 
-// const arrInvited = ["Name", "Name1", "Name2", "Name3", "Name4", "Name5", "Name6", "Name7", "Name8", "Name9"];
+const arrInvited = [`Name`, `Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`, `Name9`];
 
-// let userName = prompt(`Dimmi il tuo nome:`);
+const userName = prompt(`Dimmi il tuo nome:`);
 
-// let present = false;
+let present = false;
 
-// for (let i = 0; i < arrInvited.length; i++) {
+for (let i = 0; i < arrInvited.length; i++) {
 
-//     if (arrInvited[i].toLocaleLowerCase === userName.toLowerCase) {
-//         present = true;
-//     }
-// }
+    if (arrInvited[i] == userName) {
+        present = true;
+    }
+}
 
-// if (present) {                  //FIXME: bug in alerts
-//     alert("Benvenuto");
-// } else {
-//     alert("Il tuo nome non è nella lista");
-// }
+if (present) {                
+    alert(`Benvenuto`);
+} else {
+    alert(`Il tuo nome non è nella lista`);
+}
 
 
 /*
@@ -139,14 +139,15 @@ e calcola la somma di tutte le cifre che compongono il numero.
 - chiedi un numero di quattro cifre all'utente
 - verifica che sia davvero di 4 cifre
     - se non è di 4 cifre fai un alert e chiedilo di nuovo
-    - altrimenti somma tutte le cifre che compongono il numero
+    - altrimenti somma tutte le cifre che compongono il numero:
+        - push il numero in un array
 */
 
-let userNum = parseInt(prompt(`Dammi un numero di quattro cifre:`));
+// let userNum = parseInt(prompt(`Dammi un numero di quattro cifre:`));
 
-if (userNum.lenght !== 4) {
-    parseInt(prompt(`Dammi un numero di quattro cifre:`));
-} else {
-    
-}
+// if (userNum.lenght !== 4) {
+//     parseInt(prompt(`Dammi un numero di quattro cifre:`));
+// } else {
+
+// }
 
