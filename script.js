@@ -176,6 +176,20 @@ Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma in due versioni, con il for e con il while.
 */
 
+// FOR:
+let sum = 0;
+
+for (let index = 0; index < 5; index++) {
+    let userNum = parseInt(prompt(`Dammi un numero:`));
+    console.log(userNum);
+    sum += userNum;
+}
+
+console.log(sum);
+
+// WHILE:
+
+
 
 /*
 Snack 2.2
