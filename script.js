@@ -177,18 +177,31 @@ Esegui questo programma in due versioni, con il for e con il while.
 */
 
 // FOR:
+// let sum = 0;
+
+// for (let index = 0; index < 5; index++) {
+//     let userNum = parseInt(prompt(`Dammi un numero:`));
+//     console.log(userNum);
+//     sum += userNum;
+// }
+
+// console.log(sum);
+
+// WHILE:
 let sum = 0;
 
-for (let index = 0; index < 5; index++) {
-    let userNum = parseInt(prompt(`Dammi un numero:`));
-    console.log(userNum);
+let index = 1;
+
+while (index <= 5) {
+
+    let userNum = parseInt(prompt(`Dammi un numero ${index++}:`));
+
     sum += userNum;
+
+    console.log(userNum);
 }
 
 console.log(sum);
-
-// WHILE:
-
 
 
 /*
