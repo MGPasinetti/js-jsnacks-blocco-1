@@ -188,20 +188,20 @@ Esegui questo programma in due versioni, con il for e con il while.
 // console.log(sum);
 
 // WHILE:
-let sum = 0;
+// let sum = 0;
 
-let index = 1;
+// let index = 1;
 
-while (index <= 5) {
+// while (index <= 5) {
 
-    let userNum = parseInt(prompt(`Dammi un numero ${index++}:`));
+//     let userNum = parseInt(prompt(`Dammi un numero ${index++}:`));
 
-    sum += userNum;
+//     sum += userNum;
 
-    console.log(userNum);
-}
+//     console.log(userNum);
+// }
 
-console.log(sum);
+// console.log(sum);
 
 
 /*
@@ -209,6 +209,14 @@ Snack 2.2
 Inserisci un numero, se è pari stampa il numero,
 se è dispari stampa il numero successivo.
 */
+
+// let userNum = parseInt(prompt(`Inserisci un numero:`));
+
+// if (userNum % 2 === 0) {
+//     console.log(userNum);
+// } else {
+//     console.log(userNum + 1);
+// }
 
 
 /*
