@@ -136,15 +136,55 @@ e calcola la somma di tutte le cifre che compongono il numero.
 */
 
 
-const strUserNum = prompt(`Dammi un numero di quattro cifre:`);
+// const strUserNum = prompt(`Dammi un numero di quattro cifre:`);
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 0; i < strUserNum.length; i++) {
+// for (let i = 0; i < strUserNum.length; i++) {
 
-    sum += parseInt(strUserNum[i]);
+//     sum += parseInt(strUserNum[i]);
     
-}
+// }
 
-alert(sum);
+// alert(sum);
 
+
+
+/*
+Snack 1.9
+Calcola la somma e la media dei primi 10 numeri (da 1 a 10 inclusi).
+*/
+
+// let sum = 0;
+
+// for (let num = 1; num <= 10; num++) {
+//     sum += num;
+//     console.log(num);
+// }
+  
+// console.log(sum);
+
+// const avarage = sum / 10;
+
+// console.log(avarage);
+
+
+/*
+Snack 2.1
+Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma in due versioni, con il for e con il while.
+*/
+
+
+/*
+Snack 2.2
+Inserisci un numero, se è pari stampa il numero,
+se è dispari stampa il numero successivo.
+*/
+
+
+/*
+Snack 2.3
+Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
+*/
