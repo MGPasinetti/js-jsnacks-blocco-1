@@ -227,3 +227,20 @@ Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una list
 
 const arrNames = [`Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`];
 const arrSurnames = [`Surname1`, `Surname2`, `Surname3`, `Surname4`, `Surname5`, `Surname6`, `Surname7`, `Surname8`];
+
+const newInvitedList = [];
+
+for (let index = 0; index < 3; index++) {
+    let randomName = arrNames[Math.floor(Math.random() * arrNames.length)];
+    let randomSurname = arrSurnames[Math.floor(Math.random() * arrSurnames.length)];
+
+    let newInvited = randomName.concat(" ", randomSurname);
+
+    console.log(newInvited);
+
+    newInvitedList.push(newInvited);
+}
+
+console.log(newInvitedList);
+
+
