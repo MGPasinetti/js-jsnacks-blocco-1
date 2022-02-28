@@ -87,24 +87,24 @@ no alla festa.
         - scrivo in console log "benvenuto"
 */    
 
-const arrInvited = [`Name`, `Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`, `Name9`];
+// const arrInvited = [`Name`, `Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`, `Name9`];
 
-const userName = prompt(`Dimmi il tuo nome:`);
+// const userName = prompt(`Dimmi il tuo nome:`);
 
-let present = false;
+// let present = false;
 
-for (let i = 0; i < arrInvited.length; i++) {
+// for (let i = 0; i < arrInvited.length; i++) {
 
-    if (arrInvited[i] == userName) {
-        present = true;
-    }
-}
+//     if (arrInvited[i].toLowerCase() == userName.toLowerCase()) {
+//         present = true;
+//     }
+// }
 
-if (present) {                
-    alert(`Benvenuto`);
-} else {
-    alert(`Il tuo nome non è nella lista`);
-}
+// if (present) {                
+//     alert(`Benvenuto`);
+// } else {
+//     alert(`Il tuo nome non è nella lista`);
+// }
 
 
 /*
@@ -118,7 +118,7 @@ se è dispari inseriscilo nell’array.
 
 // for (let index = 0; index < 6; index++) {
 
-//     let userNum = parseInt(prompt(`Dammi un numero:`))
+//     let userNum = parseInt(prompt(`Dammi un numero:`));
 
 //     if (userNum % 2 === 1)  {
 //         arrOddNums.push(userNum); 
@@ -135,19 +135,16 @@ Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.
 */
 
-/*
-- chiedi un numero di quattro cifre all'utente
-- verifica che sia davvero di 4 cifre
-    - se non è di 4 cifre fai un alert e chiedilo di nuovo
-    - altrimenti somma tutte le cifre che compongono il numero:
-        - push il numero in un array
-*/
 
-// let userNum = parseInt(prompt(`Dammi un numero di quattro cifre:`));
+const strUserNum = prompt(`Dammi un numero di quattro cifre:`);
 
-// if (userNum.lenght !== 4) {
-//     parseInt(prompt(`Dammi un numero di quattro cifre:`));
-// } else {
+let sum = 0;
 
-// }
+for (let i = 0; i < strUserNum.length; i++) {
+
+    sum += parseInt(strUserNum[i]);
+    
+}
+
+alert(sum);
 
