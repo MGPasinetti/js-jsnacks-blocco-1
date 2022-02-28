@@ -219,7 +219,11 @@ se è dispari stampa il numero successivo.
 // }
 
 
+
 /*
 Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 */
+
+const arrNames = [`Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`];
+const arrSurnames = [`Surname1`, `Surname2`, `Surname3`, `Surname4`, `Surname5`, `Surname6`, `Surname7`, `Surname8`];
