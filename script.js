@@ -114,28 +114,39 @@ Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.
 */
 
-/*
-- crea un array vuoto
-- crea un ciclo che chieda all'utente per 6 volte un numero
-    - se il numero è dispari inseriscilo nell'array
-*/
+// const arrOddNums = [];
 
-const arrOddNums = [];
+// for (let index = 0; index < 6; index++) {
 
-for (let index = 0; index < 6; index++) {
+//     let userNum = parseInt(prompt(`Dammi un numero:`))
 
-    let userNum = parseInt(prompt(`Dammi un numero:`))
-
-    if (userNum % 2 === 1)  {
-        arrOddNums.push(userNum); 
-    }
+//     if (userNum % 2 === 1)  {
+//         arrOddNums.push(userNum); 
+//     }
     
-}
+// }
 
-alert(arrOddNums);
+// alert(arrOddNums);
+
 
 /*
 Snack 1.6
 Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.
 */
+
+/*
+- chiedi un numero di quattro cifre all'utente
+- verifica che sia davvero di 4 cifre
+    - se non è di 4 cifre fai un alert e chiedilo di nuovo
+    - altrimenti somma tutte le cifre che compongono il numero
+*/
+
+let userNum = parseInt(prompt(`Dammi un numero di quattro cifre:`));
+
+if (userNum.lenght !== 4) {
+    parseInt(prompt(`Dammi un numero di quattro cifre:`));
+} else {
+    
+}
+
