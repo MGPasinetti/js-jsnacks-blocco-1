@@ -188,20 +188,20 @@ Esegui questo programma in due versioni, con il for e con il while.
 // console.log(sum);
 
 // WHILE:
-// let sum = 0;
+let sum = 0;
 
-// let index = 1;
+let index = 1;
 
-// while (index <= 5) {
+while (index <= 5) {
 
-//     let userNum = parseInt(prompt(`Dammi un numero ${index++}:`));
+    let userNum = parseInt(prompt(`Dammi un numero (${index++}):`));
 
-//     sum += userNum;
+    sum += userNum;
 
-//     console.log(userNum);
-// }
+    console.log(userNum);
+}
 
-// console.log(sum);
+console.log(sum);
 
 
 /*
@@ -225,22 +225,22 @@ Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 */
 
-const arrNames = [`Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`];
-const arrSurnames = [`Surname1`, `Surname2`, `Surname3`, `Surname4`, `Surname5`, `Surname6`, `Surname7`, `Surname8`];
+// const arrNames = [`Name1`, `Name2`, `Name3`, `Name4`, `Name5`, `Name6`, `Name7`, `Name8`];
+// const arrSurnames = [`Surname1`, `Surname2`, `Surname3`, `Surname4`, `Surname5`, `Surname6`, `Surname7`, `Surname8`];
 
-const newInvitedList = [];
+// const newInvitedList = [];
 
-for (let index = 0; index < 3; index++) {
-    let randomName = arrNames[Math.floor(Math.random() * arrNames.length)];
-    let randomSurname = arrSurnames[Math.floor(Math.random() * arrSurnames.length)];
+// for (let index = 0; index < 3; index++) {
+//     let randomName = arrNames[Math.floor(Math.random() * arrNames.length)];
+//     let randomSurname = arrSurnames[Math.floor(Math.random() * arrSurnames.length)];
 
-    let newInvited = randomName.concat(" ", randomSurname);
+//     let newInvited = randomName.concat(" ", randomSurname);
 
-    console.log(newInvited);
+//     console.log(newInvited);
 
-    newInvitedList.push(newInvited);
-}
+//     newInvitedList.push(newInvited);
+// }
 
-console.log(newInvitedList);
+// console.log(newInvitedList);
 
 
